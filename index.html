@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta lang="ru" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>it-code-homework-4</title>
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="todo-form container">
+    <h1 class="todo-form-title">To-Do List</h1>
+    <button class="btn" id="todo-form-add-button">Add</button>
+    <p class="todo-form-list-title">Your TODO tasks:</p>
+    <div class="todo-form-tasks"></div>
+</div>
+<div class="modal-div">
+    <div class="modal container">
+        <button class="btn" id="cancel">X</button>
+        <textarea class="modal-task-text" placeholder="Task"></textarea>
+        <p id="error-message"></p>
+        <div class="modal-options">
+            <input class="btn" type="date" id="deadline"/>
+            <select class="select" id="performer">
+                <option hidden>Performer</option>
+                <option>Assign to myself</option>
+                <option>...</option>
+            </select>
+            <select class="select" id="priority">
+                <option hidden>Priority</option>
+                <option>Urgent</option>
+                <option>Not urgent</option>
+            </select>
+        </div>
+        <div class="line"></div>
+        <div class="addition_button">
+            <button class="btn" id="modal-add-task">Add task</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="scripts/script.js"></script>
+</html>

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000070;
+    font-weight: 700;
+}
+html{
+    height: 100%;
+}
+body {
+    background:linear-gradient(320deg, #3b126e 40%, #163368 60%);
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 40vw;
+    background: #efefef;
+    padding: 12px;
+    border:none;
+    border-radius: 8px;
+}
+
+.todo-form {
+    top:112px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn, .select {
+    border:none;
+    background: #ff3c00;
+    padding: 12px 32px;
+    color:white;
+    border-radius: 24px;
+    margin-top: 12px;
+    transition: transform .5s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #00b7ff;
+    transform: scale(1.08) translateY(-2px);
+}
+
+.select:hover {
+    background: #00b7ff;
+    cursor: pointer;
+}
+
+.todo-form-list-title {
+    text-align: left;
+    padding: 12px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.todo-form-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.todo-form-task {
+    display: flex;
+    gap: 4px;
+    padding: 12px;
+    flex-direction: column;
+    border: 2px #ff4900 solid;
+    border-radius: 6px;
+    align-items: start;
+    width: 100%;
+}
+
+.todo-form-task-line {
+    text-align: left;
+    font-style: italic;
+    width: 80%;
+    font-weight: bold;
+}
+
+.task-arg {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.todo-list-additional-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-div{
+    display: none;
+    height: 100%;
+    width:100%;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.56);
+}
+.modal {
+    flex-direction: column;
+    width: 36vw;
+}
+
+.modal-task-text {
+    border: none;
+    background: transparent;
+}
+
+.modal-task-text {
+    width: 100%;
+    font-size: 16px;
+}
+
+#error-message {
+    color: red;
+}
+
+.modal-options {
+    display: flex;
+    gap: 12px;
+}
+.addition_button{
+    display: flex;
+    justify-content: end;
+}
+#deadline {
+    color-scheme: dark;
+}
+
+.line {
+    margin-top: 12px;
+    border-bottom: 1px #787878 solid;;
+}
+
+.modal .btn, .select {
+    font-size: 16px;
+    padding:6px;
+}
+.modal-additional-buttons {
+    display:flex;
+    justify-content: end;
+    gap:12px;
+}
+#modal-add-task {
+    width: 10vw;
+}
+#modal-edit-task{
+    width: 10vw;
+}
+#cancel {
+    position: absolute;
+    margin: 0;
+    font-size: 8px;
+    right: 4px;
+    top: 4px;
+    background: #671616;
+    border: 1px #a30707 solid;
+}
